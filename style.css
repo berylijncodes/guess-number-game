@@ -6,11 +6,16 @@
 
 body {
   font-size: 1.1rem;
+  /* position: relative; */
 }
 
 h1 {
   font-size: 2.5rem;
   text-transform: capitalize;
+}
+
+p {
+  font-size: 1.4rem;
 }
 
 .container {
@@ -20,27 +25,63 @@ h1 {
 }
 
 .header__wrapper {
-  position: relative;
+  /* position: relative; */
 }
 
 .header {
   background-color: #462c87;
 
   color: #bec69e;
+  cursor: pointer;
   text-align: center;
   padding: 3em;
   margin-bottom: 2em;
+  position: relative;
 }
 
 .header__sub-title {
-  font-size: 1.5rem;
   font: 400;
   margin-bottom: 2em;
 }
 
+.header .btn {
+  cursor: pointer;
+}
+
 .btn {
+  background-image: linear-gradient(
+    to right top,
+    #431f8d,
+    #531f8d,
+    #611e8d,
+    #6e1f8d,
+    #7a1f8d
+  );
+  border-radius: 5px;
+  color: #bec69e;
   padding: 0.6em 2.2em;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #008917;
+  background-image: none;
+  color: #131313;
+}
+.again {
+  background-color: #bec69e;
+  background-image: none;
+  border: 1px solid #bec69e;
+  color: #131313;
+}
+
+.again:hover {
+  /* background-image: none; */
+  background: transparent !important;
+  color: #bec69e;
 }
 
 .custom-shape-divider-bottom-1643302465 {
@@ -48,7 +89,8 @@ h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  overflow: hidden;
+  overflow: inherit;
+  /* overflow: hidden; */
   line-height: 0;
   transform: rotate(180deg);
 }
@@ -58,8 +100,46 @@ h1 {
   display: block;
   width: calc(100% + 1.3px);
   height: 146px;
+  z-index: -1;
 }
 
 .custom-shape-divider-bottom-1643302465 .shape-fill {
   fill: #ffffff;
+}
+
+/* Section: Score board */
+.score__board {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 2em;
+}
+
+.score__number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score__number input {
+  border: 1px solid #008917;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.score__info-message {
+  margin-bottom: 3em;
+}
+
+.score__info-score {
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: #462c87;
+  padding: 1.5em;
 }

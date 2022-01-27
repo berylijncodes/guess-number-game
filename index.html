@@ -9,12 +9,11 @@
   </head>
   <body>
     <!-- <div class="container"> -->
-    <div class="header__wrapper">
-      <header class="header">
-        <h1 class="header__title">Guess my number!</h1>
-        <p class="header__sub-title">(Between 1 and 20)</p>
-        <button class="btn">Again</button>
-      </header>
+    <!-- <div class="header__wrapper"> -->
+    <header class="header">
+      <h1 class="header__title">Guess my number!</h1>
+      <p class="header__sub-title">(Between 1 and 20)</p>
+      <button class="btn again">Again</button>
       <div class="custom-shape-divider-bottom-1643302465">
         <svg
           data-name="Layer 1"
@@ -28,19 +27,22 @@
           ></path>
         </svg>
       </div>
-    </div>
-    <section class="score__board">
+    </header>
+
+    <!-- </div> -->
+    <section class="score__board container">
       <div class="score__number">
         <input type="number" name="" id="" />
-        <button class="btn">Check</button>
+        <button class="btn check">Check</button>
       </div>
       <div class="score__info">
-        <p>No number!</p>
-        <p>Your score: 20</p>
-        <p>Highscore: 0</p>
+        <p class="score__info-message">No number!</p>
+        <p class="score__info-score">Your score: 20</p>
+        <p class="score__info-highscore">Highscore: 0</p>
       </div>
     </section>
     <footer>Beryl &copy; 2022</footer>
     <!-- </div> -->
+    <script src="app.js"></script>
   </body>
 </html>
