@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.container {
+  width: 95%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  position: relative;
+}
+
+.header {
+  background-color: #462c87;
+
+  color: #bec69e;
+  text-align: center;
+  padding: 3em;
+  margin-bottom: 2em;
+}
+
+.header__sub-title {
+  font-size: 1.5rem;
+  font: 400;
+  margin-bottom: 2em;
+}
+
+.btn {
+  padding: 0.6em 2.2em;
+  font-size: 1.1rem;
+}
+
+.custom-shape-divider-bottom-1643302465 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1643302465 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 146px;
+}
+
+.custom-shape-divider-bottom-1643302465 .shape-fill {
+  fill: #ffffff;
+}
