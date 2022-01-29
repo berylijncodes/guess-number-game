@@ -5,15 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess My Number Game</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- <div class="container"> -->
     <!-- <div class="header__wrapper"> -->
     <header class="header">
+      <button class="btn again">Again <i class="fas fa-sync-alt"></i></button>
+
       <h1 class="header__title">Guess my number!</h1>
       <p class="header__sub-title">(Between 1 and 20)</p>
-      <button class="btn again">Again</button>
+      <div class="header__number">?</div>
       <div class="custom-shape-divider-bottom-1643302465">
         <svg
           data-name="Layer 1"
@@ -28,21 +38,27 @@
         </svg>
       </div>
     </header>
-
-    <!-- </div> -->
-    <section class="score__board container">
+    <section class="score__board">
       <div class="score__number">
-        <input type="number" name="" id="" />
+        <input type="number" name="" class="score__number-guess" />
         <button class="btn check">Check</button>
       </div>
-      <div class="score__info">
-        <p class="score__info-message">No number!</p>
-        <p class="score__info-score">Your score: 20</p>
-        <p class="score__info-highscore">Highscore: 0</p>
+      <div class="flex">
+        <div class="score__info">
+          <p class="score__info-message">Start Guessing...</p>
+        </div>
+        <div>
+          <p class="score__info-score">
+            <i class="fas fa-check-circle"></i> Your score: 20
+          </p>
+          <p class="score__info-highscore">
+            <i class="fas fa-trophy"></i> Highscore: 0
+          </p>
+        </div>
       </div>
     </section>
     <footer>Beryl &copy; 2022</footer>
-    <!-- </div> -->
+
     <script src="app.js"></script>
   </body>
 </html>
