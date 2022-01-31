@@ -16,11 +16,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <div class="container"> -->
-    <!-- <div class="header__wrapper"> -->
     <header class="header">
       <button class="btn again">Again <i class="fas fa-sync-alt"></i></button>
-
       <h1 class="header__title">Guess my number!</h1>
       <p class="header__sub-title">(Between 1 and 20)</p>
       <div class="header__number">?</div>
@@ -47,17 +44,20 @@
         <div class="score__info">
           <p class="score__info-message">Start Guessing...</p>
         </div>
-        <div>
-          <p class="score__info-score">
-            <i class="fas fa-check-circle"></i> Your score: 20
-          </p>
-          <p class="score__info-highscore">
-            <i class="fas fa-trophy"></i> Highscore: 0
-          </p>
-        </div>
+      </div>
+      <div class="your__score">
+        <p class="score__info-score">
+          <i class="fas fa-check-circle"></i> Your score: 20
+        </p>
+        <p class="score__info-highscore">
+          <i class="fas fa-trophy"></i> Highscore: 0
+        </p>
       </div>
     </section>
+    <canvas id="my-canvas"></canvas>
     <footer>Beryl &copy; 2022</footer>
+    <script src="index.min.js"></script>
+    <!-- <script src="node_modules/confetti-js/dist/index.min.js"></script> -->
 
     <script src="app.js"></script>
   </body>
